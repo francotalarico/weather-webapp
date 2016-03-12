@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <title>WeatherApp</title>
 
-    <link rel="stylesheet" href="bootstrap.css">
-    <link rel="stylesheet" href="weather.css">
-    <link rel="stylesheet" href="icons.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/pace.css">
+    <link rel="stylesheet" href="css/weather.css">
+    <link rel="stylesheet" href="css/icons.css">
 
 </head>
 <body>
+
+    <div id="loader"></div>
 
     <main>
         <div id="more-info">
@@ -18,9 +21,9 @@
             <p>Sea level: 1033.61</p>
         </div>
         <div class="current-weather">
-            <h1 id="current-city">Bella Vista</h1>
+            <h1 id="current-city"></h1>
             <i data-icon="H"></i>
-            <p id="current-description">Scattered clouds</p>
+            <p id="current-description"></p>
         </div>
     </main>
     <footer>
@@ -31,8 +34,8 @@
             <div class="data">
                 <p>24°</p>
                 <div class="btn-group" role="group" aria-label="">
-                    <button type="button" class="btn">Kelvin</button>
-                    <button type="button" class="btn active">Celsius</button>
+                    <button type="button" class="btn active">Kelvin</button>
+                    <button type="button" class="btn">Celsius</button>
                 </div>
             </div>
         </div>
@@ -43,6 +46,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-
+    <script src="js/pace.min.js"></script>
+    <script src="js/weather.js"></script>
 </body>
 </html>

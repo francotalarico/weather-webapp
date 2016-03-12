@@ -1,6 +1,10 @@
 /**
  * Created by franco on 12/03/16.
  */
+$(window).load(function() {
+    $("#loader").delay(1000).slideUp();
+});
+
 $(document).ready(function(){
     var
         lat,
