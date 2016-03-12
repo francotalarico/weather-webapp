@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WeatherApp</title>
+
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="weather.css">
+    <link rel="stylesheet" href="icons.css">
+
+</head>
+<body>
+
+    <main>
+        <div id="more-info">
+            <p>Humidity: 65%</p>
+            <p>Pressure: 1031.2</p>
+            <p>Sea level: 1033.61</p>
+        </div>
+        <div class="current-weather">
+            <h1 id="current-city">Bella Vista</h1>
+            <i data-icon="H"></i>
+            <p id="current-description">Scattered clouds</p>
+        </div>
+    </main>
+    <footer>
+        <div class="col-md-4 min">
+            <p><span>19°</span> min</p>
+        </div>
+        <div class="col-md-4 current">
+            <div class="data">
+                <p>24°</p>
+                <div class="btn-group" role="group" aria-label="">
+                    <button type="button" class="btn">Kelvin</button>
+                    <button type="button" class="btn active">Celsius</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 max">
+            <p><span>27°</span> max</p>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+</body>
+</html>
