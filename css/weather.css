@@ -129,6 +129,32 @@ footer .current .btn-group .btn.active {
   .min, .max {
       display: none !important;
   }
+
+    main .current-weather h1 {
+        font-size: 8vw;
+    }
+
+    main .current-weather i {
+        font-size: 25vw;
+        line-height: 25vw;
+    }
+
+    main .current-weather p {
+        font-size: 4.5vw;
+    }
+
+    footer .current p {
+        font-size: 8vw;
+    }
+
+    footer .current .btn-group .btn {
+        font-size: 3.4vw;
+        padding: 20px 20px;
+    }
+
+    #more-info {
+        font-size: 2.6vw;
+    }
 }
 
 .none {

@@ -74,6 +74,6 @@ $(document).ready(function(){
         });
 
     } else {
-        /* geolocaiton IS NOT available */
+        $("body").html("Your browser doesn't support geolocation.")
     }
 });
