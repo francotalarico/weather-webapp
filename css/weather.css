@@ -9,7 +9,6 @@
     user-select: none;
 }
 
-
 main {
     height: 80vh;
     width: 100%;
@@ -18,43 +17,44 @@ main {
     position: relative;
 }
 
-    main .current-weather {
+main .current-weather {
 
-        text-align: center;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
-        main .current-weather h1 {
-            margin: 30px;
-            color: rgba(0, 0, 0, .6);
-        }
+main .current-weather h1 {
+    margin: 30px;
+    color: rgba(0, 0, 0, .6);
+}
 
-        main .current-weather i {
-            font-size: 10vw;
-            font-style: normal;
-            color: #ffffff;
-            margin: 0;
-            line-height: 10vw;
-        }
+main .current-weather i {
+    font-size: 10vw;
+    font-style: normal;
+    color: #ffffff;
+    margin: 0;
+    line-height: 10vw;
+}
 
-        main .current-weather p {
-            font-size: 14px;
-            color: #5e5e5e;
-            text-transform: capitalize;
-        }
+main .current-weather p {
+    font-size: 14px;
+    color: #5e5e5e;
+    text-transform: capitalize;
+    margin-top: 6px;
+}
 
-    main #more-info {
-        padding: 10px 20px;
-        text-align: right;
-    }
+main #more-info {
+    padding: 10px 20px;
+    text-align: right;
+}
 
-        main #more-info p {
-            margin: 0;
-            color: rgba(0,0,0,.4);
-        }
+main #more-info p {
+    margin: 0;
+    color: rgba(0, 0, 0, .4);
+}
 
 footer {
     height: 20vh;
@@ -102,7 +102,7 @@ footer .current .btn-group {
 }
 
 footer .current .btn-group .btn {
-    padding:4px 14px;
+    padding: 4px 14px;
     line-height: 14px;
     border: 1px solid #333;
     background: #ffffff;
@@ -123,4 +123,14 @@ footer .current .btn-group .btn:hover {
 footer .current .btn-group .btn.active {
     background: #333;
     color: #ffffff;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .min, .max {
+      display: none !important;
+  }
+}
+
+.none {
+    display: none;
 }

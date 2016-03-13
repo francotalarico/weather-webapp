@@ -12,35 +12,34 @@
 </head>
 <body>
 
-    <div id="loader"></div>
+    <!--<div id="loader"></div>-->
 
     <main>
-        <div id="more-info">
-            <p>Humidity: 65%</p>
-            <p>Pressure: 1031.2</p>
-            <p>Sea level: 1033.61</p>
+        <div id="more-info" class="none">
+            <p>Humidity: <span id="current-humidity"></span>%</p>
+            <p>Pressure: <span id="current-pressure"></span> hPa</p>
         </div>
         <div class="current-weather">
-            <h1 id="current-city"></h1>
-            <i data-icon="H"></i>
-            <p id="current-description"></p>
+            <h1 id="current-city" class="none"></h1>
+            <i class="icon none"></i>
+            <p id="current-description" class="none"></p>
         </div>
     </main>
     <footer>
         <div class="col-md-4 min">
-            <p><span>19°</span> min</p>
+            <p class="none"><span></span> min</p>
         </div>
         <div class="col-md-4 current">
             <div class="data">
-                <p>24°</p>
+                <p class="none"></p>
                 <div class="btn-group" role="group" aria-label="">
-                    <button type="button" class="btn active">Kelvin</button>
-                    <button type="button" class="btn">Celsius</button>
+                    <button id="toKelvin" type="button" class="btn active">Kelvin</button>
+                    <button id="toCelsius" type="button" class="btn">Celsius</button>
                 </div>
             </div>
         </div>
         <div class="col-md-4 max">
-            <p><span>27°</span> max</p>
+            <p class="none"><span></span> max</p>
         </div>
     </footer>
 
